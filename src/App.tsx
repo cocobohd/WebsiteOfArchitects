@@ -1,7 +1,7 @@
 function App() {
   return (
     <>
-      <header>Fist commit</header>
+      <header className="text-2xl bold">Fist commit</header>
     </>
   );
 }
