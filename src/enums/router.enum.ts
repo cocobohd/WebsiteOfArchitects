@@ -1,5 +1,7 @@
 export enum PublicRoutes {
   HOME_PATH = '/',
-  TEST_PATH = '/test',
-  ABOUT_PATH = '/about',
+  CONTACTS_PATH = '/contacts',
+  GALLERY_PATH = '/gallery',
+  PROJECTS_PATH = '/projects',
+  CERTIFICATION_PATH = '/certification',
 }

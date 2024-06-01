@@ -1,9 +1,11 @@
 import { Suspense } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-import { PublicRoutes } from '../enums/router.enum.ts';
-import Layout from '../components/wrappers/layout.component.tsx';
-import Test from '../components/test.component.tsx';
+import { PublicRoutes } from 'enums/router.enum.ts';
+
+import Layout from 'components/wrappers/layout.component.tsx';
+
+import { Main, Contacts, Gallery, Projects, Certifications } from './lazy.router';
 
 interface RouterItem {
   path: string;
@@ -13,12 +15,24 @@ interface RouterItem {
 
 const routerElements: RouterItem[] = [
   {
-    path: PublicRoutes.TEST_PATH,
-    element: <Test />,
+    path: PublicRoutes.HOME_PATH,
+    element: <Main />,
   },
   {
-    path: PublicRoutes.ABOUT_PATH,
-    element: <div>About</div>,
+    path: PublicRoutes.CONTACTS_PATH,
+    element: <Contacts />,
+  },
+  {
+    path: PublicRoutes.GALLERY_PATH,
+    element: <Gallery />,
+  },
+  {
+    path: PublicRoutes.PROJECTS_PATH,
+    element: <Projects />,
+  },
+  {
+    path: PublicRoutes.CERTIFICATION_PATH,
+    element: <Certifications />,
   },
 ];
 
