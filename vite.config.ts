@@ -16,6 +16,7 @@ export default defineConfig({
       components: path.resolve(__dirname, './src/components'),
       enums: path.resolve(__dirname, './src/enums'),
       router: path.resolve(__dirname, './src/router'),
+      assets: path.resolve(__dirname, './src/assets'),
     },
   },
 });
