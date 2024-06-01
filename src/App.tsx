@@ -1,9 +1,8 @@
+import { RouterProvider } from 'react-router-dom';
+import { router } from './router/main.router.tsx';
+
 function App() {
-  return (
-    <>
-      <header className="text-2xl bold text-gray-text">Fist commit</header>
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
